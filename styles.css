@@ -1,0 +1,339 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffa500;
+}
+
+section {
+    padding: 100px 0; /* Extra top padding for fixed header */
+}
+
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #4b05f0, #05bef7);
+    color: #fff;
+    padding: 60px 0;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.hero-content {
+    max-width: 500px;
+    
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+.hero-content img {
+    width: 200px; /* Adjust size */
+    height: 200px; /* Same as width for a perfect circle */
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover;
+    position: absolute;
+    right: 50px; /* Align to right */
+    top: 35%; /* Center vertically */
+    transform: translateY(-50%);
+    border: 5px solid #fff; /* Optional border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for effect */
+}
+
+.hero-content .cta-btn {
+    background-color: #fff;
+    color: #333;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.hero-content .cta-btn:hover {
+    background-color: #13df46;
+    color: #fff;
+}
+
+.hero-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#about p, #skills p {
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.skill-card {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 10px 0;
+}
+
+.project-card a {
+    display: block;
+    margin-top: 15px;
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 12px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffa500;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+#resume .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust height as needed */
+}
+.resume-btn {
+    display: inline-block;
+    background: #000000; /* Green color */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.resume-btn:hover {
+    background: #e46c0a;
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.social-icons h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333; 
+}
+
+
+.social-icons a {
+    text-decoration: none; 
+    font-size: 18px; 
+    color: #333; 
+    margin: 0 15px; 
+    padding: 10px; 
+    display: inline-flex; 
+    align-items: center; 
+    transition: all 0.3s ease; 
+}
+
+
+.social-icons a i {
+    margin-right: 8px; 
+    font-size: 20px; 
+}
+
+
+.social-icons a:hover {
+    color: #007bff; 
+    transform: translateY(-3px); 
+}
+
+
+.social-icons a:active {
+    transform: translateY(1px); 
+}
+
+/* General container for courses */
+#courses-completed {
+    padding: 40px 0; /* Adds padding to the top and bottom of the section */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+#courses-completed h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Courses container */
+.courses-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Style for each course card */
+.course-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%; /* Each card takes up 30% of the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow to the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.course-card a {
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+    border-bottom: 1px solid #007bff;
+}
+
+.course-card a:hover {
+    color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Hover effect for course cards */
+.course-card:hover {
+    transform: translateY(-5px); /* Slightly lifts the card on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adds more shadow on hover */
+}
